@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+    "name": "single test",
+    "env": {},
+    "type": "node",
+    "request": "launch",
+    "args": ["wdio.conf.js", "--spec", "${file}"],
+    "cwd": "${workspaceFolder}",
+    "autoAttachChildProcesses": true,
+    "program": "${workspaceRoot}/node_modules/.bin/wdio",
+    "console": "integratedTerminal"
+}  
+    ]
+}
+
