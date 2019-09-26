@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio wdio.conf.js --inspect",
+    "test:login": "wdio wdio.conf.js --spec ./test/specs/mainPage.js --inspect",
     "test:diary:List": "wdio wdio.conf.js --spec ./test/specs/diary/diaryList.js --inspect",
     "test: register": "wdio wdio.conf.js --spec ./test/specs/mainPage.js --inspect",
-    "test:user:loginForm:design": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/design/user_loginForm_design.js --inspect",
-    "test:user:loginForm:func": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/func/user_loginForm_func.js --inspect",
+    "test:user:loginform:design": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/design/user_loginForm_design.js --inspect",
+    "test:user:loginform:func": "wdio wdio.conf.js --spec ./test/specs/user/loginForm/func/user_loginForm_func.js --inspect",
+    "test:user:registerform:func": "wdio wdio.conf.js --spec ./test/specs/user/registerForm/func/user_registerForm_func.js --inspect",
+    "test:user:registerlogin:integr": "wdio wdio.conf.js --spec ./test/specs/user/integration/user_register-login_integr.js --inspect",
     "test:ted": "wdio wdio.conf.js --spec ./test/specs/ted.js --inspect"
   },
   "author": "Vladyslava Iurchenko",
